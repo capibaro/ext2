@@ -252,7 +252,7 @@ int mkdir()
     }
     else
     {
-        printf("Usage: mkdir [dir]\n");
+        printf("Usage: mkdir <dir>\n");
     }
 }
 
@@ -312,7 +312,7 @@ int touch()
     }
     else
     {
-        printf("Usage: touch [file]\n");
+        printf("Usage: touch <file>\n");
     }
 }
 
@@ -397,13 +397,13 @@ int cp()
             }
             else
             {
-                printf("Usage: cp [src] [dst]\n");
+                printf("Usage: cp <src> <dst>\n");
             }
         }
     }
     else
     {
-        printf("Usage: cp [src] [dst]\n");
+        printf("Usage: cp <src> <dst>\n");
     }
 }
 
