@@ -4,7 +4,6 @@
 // The size of one single disk block in bytes
 #define DEVICE_BLOCK_SIZE 512
 
-
 // Total disk size in bytes, 4 * 1024 * 1024 bytes (4 MiB) in total
 int get_disk_size();
 
@@ -41,7 +40,7 @@ int close_disk();
  * @note The space of buf should be no less than DEVICE_BLOCK_SIZE.
  * Make sure open_disk() is called before calling this function.
  */
-int disk_read_block(unsigned int block_num, char* buf);
+int disk_read_block(unsigned int block_num, char *buf);
 
 /**
  * @brief Write content of buf to the block_num-th block.
@@ -52,6 +51,6 @@ int disk_read_block(unsigned int block_num, char* buf);
  * 
  * @note Make sure open_disk() is called before calling this function.
  */
-int disk_write_block(unsigned int block_num, char* buf);
+int disk_write_block(unsigned int block_num, char *buf);
 
-#endif 
+#endif
